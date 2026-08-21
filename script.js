@@ -29,7 +29,7 @@ const CONFIG = {
     { src: "our-story-site/lovely-page/assets/photos/4.jpg", caption: "our very first snacks together" },
     { src: "our-story-site/lovely-page/assets/photos/5.jpg", caption: "first lunch we had together" },
     { src: "our-story-site/lovely-page/assets/photos/6.jpg", caption: "our very first rickshaw ride" },
-    { src: "our-story-site/lovely-page/assets/photos/7.jpg", caption: "happy her" },
+    { src: "our-story-site/lovely-page/assets/photos/7.jpg", caption: "happy she" },
     { src: "our-story-site/lovely-page/assets/photos/8.jpg", caption: "most beautiful angry face" },
   ],
 
