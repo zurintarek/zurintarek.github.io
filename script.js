@@ -14,8 +14,8 @@ const CONFIG = {
 
   // Your letter. Use \n\n for a new paragraph.
   message:
-    "If someone told me a single message with asking 'baire cole jaccho naki?' could change everything, " +
-    "I don't think I would have believed them.\n\n" +
+    "If someone told us a single message with asking 'baire cole jaccho naki?' could change everything, " +
+    "We don't think we would have believed them.\n\n" +
     "But that was before sending the message. After, every day on this counter is one we would choose again, in any order, " +
     "in any lifetime.",
 
