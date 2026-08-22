@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zurin & Tarek - Our Story</title>
+<meta name="description" content="A digital keepsake of our journey, from day one to right now">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600&family=Cormorant:ital,wght@0,400;0,500;1,500;1,600&family=Jost:wght@300;400;500;600&family=JetBrains+Mono:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="glow glow--a"></div>
+<div class="glow glow--b"></div>
+
+<!-- ============================================================= -->
+<!-- ALL YOUR CONTENT LIVES IN config.js — edit that file, not this -->
+<!-- ============================================================= -->
+
+<main class="page">
+
+  <!-- Music player -->
+  <section class="player" id="player" hidden>
+    <div class="player__row">
+      <button class="player__toggle" id="playerToggle" aria-label="Play song">
+        <svg id="iconPlay" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="iconPause" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" hidden><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <div class="player__meta">
+        <div class="player__title" id="playerTitle">Song title</div>
+        <div class="player__artist" id="playerArtist">Artist</div>
+      </div>
+      <div class="player__bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="player__seekRow">
+      <span class="player__time" id="playerCurrent">0:00</span>
+      <input class="player__seek" id="playerSeek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+      <span class="player__time" id="playerDuration">0:00</span>
+    </div>
+    <audio id="playerAudio" loop muted preload="metadata"></audio>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="hero__names" id="names">Name &amp; Name</h1>
+    <p class="hero__date" id="startDateLabel">Month Day, Year</p>
+  </section>
+
+  <!-- Photo fan -->
+  <section class="fan" id="fan">
+    <button class="fan__nav fan__nav--prev" id="fanPrev" aria-label="Previous photo">&#10094;</button>
+    <div class="fan__stage" id="fanStage"></div>
+    <button class="fan__nav fan__nav--next" id="fanNext" aria-label="Next photo">&#10095;</button>
+  </section>
+
+  <!-- Lightbox: opens when the centered photo is clicked -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close photo">&times;</button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- Quote -->
+  <section class="quote">
+    <p id="quoteText">&ldquo;Quote goes here.&rdquo;</p>
+  </section>
+
+  <!-- Time together -->
+  <section class="timer">
+    <h2 class="script-heading">Time Together</h2>
+    <div class="timer__grid" id="timerGrid">
+      <div class="timer__cell"><span class="timer__num" id="tYears">0</span><span class="timer__label">Years</span></div>
+      <div class="timer__cell"><span class="timer__num" id="tMonths">0</span><span class="timer__label">Months</span></div>
+      <div class="timer__cell"><span class="timer__num" id="tDays">0</span><span class="timer__label">Days</span></div>
+      <div class="timer__cell"><span class="timer__num" id="tHours">0</span><span class="timer__label">Hours</span></div>
+      <div class="timer__cell"><span class="timer__num" id="tMinutes">0</span><span class="timer__label">Minutes</span></div>
+      <div class="timer__cell"><span class="timer__num" id="tSeconds">0</span><span class="timer__label">Seconds</span></div>
+    </div>
+    <p class="timer__total" id="totalHours">A total of 0 hours</p>
+  </section>
+
+  <!-- Today's note — only shows when cfg.notes has an entry matching
+       today's date (see config.js). Empty on every other day. -->
+  <section class="today" id="todaySection" hidden>
+    <div class="today__list" id="todayList"></div>
+  </section>
+
+  <!-- Milestones (fully custom — see cfg.milestones in config.js) -->
+  <section class="milestones">
+    <div class="milestones__track" id="milestonesTrack"></div>
+  </section>
+
+  <!-- Happiness counter -->
+  <section class="happy">
+    <h2 class="script-heading" id="happyHeading">Being Happy</h2>
+    <p class="happy__days" id="happyDays">0 days</p>
+    <p class="happy__sub">by your side</p>
+    <span class="happy__heart">&#9829;</span>
+  </section>
+
+  
+
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
