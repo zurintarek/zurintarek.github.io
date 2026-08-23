@@ -49,7 +49,7 @@ window.SITE_CONFIG = {
     { title: "", date: "", photo: "", message: "" },
     { title: "It all started today, back in 2025", date: "08-22", photo: "assets/photos/0.jpg", message: "We knew each other since 2021. I liked you back then, but never had the courage to say it because I didn't know what you felt about me.\nThen, on 21 August 2025, I got my first job and decided it was finally time to tell you.\nThe next day, 22 August, you posted a story with your passport. I simply asked, 'baire cole jaccho naki?'\nThat little message changed everything.\nFrom that day, we started talking every day. And somehow, one conversation turned into a journey that brought us here—married, together, and building a life of our own.\nLooking back, I realize how grateful I am that I sent that message, that you replied, and that life gave us this beautiful chance.\nFrom 'baire cole jaccho naki?' to 'my wife.'\n\nWhat a journey. 🤍" },
     { title: "No messages on this day back in 2025", date: "08-23", photo: "", message: "You didn't upload any stories, and I didn't get a chance to message you.😐\n\nWhy didn’t you upload anything?😒" },
-    { title: "test", date: "08-23", photo: "", message: "test message" },
+    { title: "", date: "", photo: "", message: "" },
   ],
 
   // ---- Optional background song ----
